@@ -2,6 +2,10 @@ html{
     font-size: 62.5%;
 }
 
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 
 body{
@@ -108,5 +112,75 @@ min-height:40rem
 }
 
 .anuncio{
-    flex-basis: calc(33.3% - 1rem)
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #b5b5b5;
+    background-color: #fd4e4e;
+}
+
+.contenido-anuncio{
+    padding: 0 2rem 0 2rem                 
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p{
+    margin: 0
+}
+.contenido-anuncio h3{
+    font-size: 2.2rem;
+    font-weight: 100;
+    line-height: 2;
+}
+
+.precio{
+    color: #71B100;
+    font-weight: 700;
+}
+
+/*BOTONES*/
+.boton{
+    color: white;
+    border: 1px solid grey;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.boton-amarillo{
+    background-color: #e08709;
+    display: block;
+
+}
+
+.boton-verde{
+    background-color: #71B100;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagen-contacto{
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto{
+    flex: 1;
+    color: white;
+}
+.contenido-contacto p{
+    font-size: 2rem;
 }
